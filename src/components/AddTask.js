@@ -1,7 +1,7 @@
-import React from 'react'
+// import React from 'react'
 import { useState} from 'react'
 
-export const AddTask = () => {
+const AddTask = ({onAdd}) => {
 const [text, setText] = useState('')//update
 const [day, setDay] = useState('')
 const [reminder, setReminder] = useState(false)
@@ -20,6 +20,20 @@ const onSubmit = (e) => {
         setDay('')
         setReminder(false)
 }
+// const onSubmit = (e) => {
+//     e.preventDefault()
+
+//     if (!text) {
+//       alert('Please add a task')
+//       return
+//     }
+
+//     onAdd({ text, day, reminder })
+
+//     setText('')
+//     setDay('')
+//     setReminder(false)
+//   }
 
     return (
         <form className='add-form' onSubmit={onSubmit}>
@@ -39,9 +53,11 @@ const onSubmit = (e) => {
                 checked={reminder}
                  value={reminder} onChange={(evt) => setReminder(evt.currentTarget.checked)}/>
             </div>
-            {/* currentTarget identifies current target or event as the evnt traverses DOM */}
+          
 
             <input type='submit' value='Save Task' className='btn btn-block'/>
         </form>
     )
 }
+
+export default AddTask
