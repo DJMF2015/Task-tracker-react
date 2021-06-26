@@ -1,7 +1,7 @@
-// import React from 'react'
+import React from 'react'
 import { useState} from 'react'
 
-const AddTask = ({onAdd}) => {
+const AddTask = ({ onAdd }) => {
 const [text, setText] = useState('')//update
 const [day, setDay] = useState('')
 const [reminder, setReminder] = useState(false)
@@ -40,7 +40,6 @@ const onSubmit = (e) => {
                  value={reminder} onChange={(evt) => setReminder(evt.currentTarget.checked)}/>
             </div>
           
-
             <input type='submit' value='Save Task' className='btn btn-block'/>
         </form>
     )
