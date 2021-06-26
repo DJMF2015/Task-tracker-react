@@ -1,0 +1,46 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Doctors appointment",
+      "day": "Feb 5th at 2:30pm",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Go to the museum",
+      "day": "Dec 5th at 22:30pm",
+      "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "Attend Club Day",
+      "day": "June 24 at 2:30pm",
+      "reminder": false
+    },
+    {
+      "id": 4,
+      "text": "Learn react",
+      "day": "Feb 15th at 15:30pm",
+      "reminder": true
+    },
+    {
+      "text": "aasdasd",
+      "day": "3424dsdasdasd",
+      "reminder": true,
+      "id": 5
+    },
+    {
+      "text": "asdasd",
+      "day": "3eq34dasd",
+      "reminder": false,
+      "id": 6
+    },
+    {
+      "text": "sdasdas",
+      "day": "asdsadaw23423a",
+      "reminder": false,
+      "id": 7
+    }
+  ]
+}
