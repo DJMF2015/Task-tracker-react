@@ -24,7 +24,7 @@ const App = () => {
 
   //fetch tasks
   const fetchTasks = async () => {
-    const response = await fetch('http://locahost:5000/tasks')
+    const response = await fetch('http://localhost:5000/tasks')
     const data = await response.json()
 
     return data
@@ -42,10 +42,6 @@ const App = () => {
 
   //ADD NEW TASK
   const addTask = async (task) => {
-    //create new random Id with additional +1 increment
-    // const id = Math.random(Math.floor() * 10000) + 1
-    // const newTask = {id, ...task}
-    // setTasks([...tasks, newTask])
     const response = await fetch('http://localhost:5000/tasks', {
       method: 'POST',
       headers: {
@@ -103,7 +99,7 @@ const App = () => {
         <Route
          path='/' 
          exact 
-         render={(props)  => (
+         render={()  => (
           <>
             {showAddTask && <AddTask onAdd={addTask} />}
             {tasks.length > 0 ? (
